@@ -16,7 +16,7 @@ name = "beefy-node"
 targets = ["x86_64-unknown-linux-gnu"]
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "master" }
+substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
 
 [dependencies]
 jsonrpc-core = "15.0.0"
@@ -29,35 +29,35 @@ beefy-gadget-rpc = { version = "0.1.0", path = "../../beefy-gadget/rpc" }
 beefy-node-runtime = { path = "../runtime", version = "2.0.0" }
 
 # Substrate dependencies
-frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-transaction-payment-rpc = { git = "https://github.com/paritytech/substrate", branch = "master" }
+frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+pallet-transaction-payment-rpc = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
 
-sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-cli = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-executor = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "master" }
-sc-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-rpc = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-rpc-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-service = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "master" }
-sc-telemetry = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-cli = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "statemint" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-executor = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "statemint" }
+sc-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-rpc = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-rpc-api = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-service = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"], branch = "statemint" }
+sc-telemetry = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
 
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
+sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
 
-substrate-frame-rpc-system = { git = "https://github.com/paritytech/substrate", branch = "master" }
+substrate-frame-rpc-system = { git = "https://github.com/paritytech/substrate", branch = "statemint" }
 
 [features]
 default = []
