@@ -285,6 +285,30 @@ mod tests {
 	}
 
 	#[test]
+	fn off_eight_signed_commitment_encode_decode() {
+		// given
+		let commitment: TestCommitment = Commitment {
+			payload: "Hello World!".into(),
+			block_number: 5,
+			validator_set_id: 0,
+		};
+
+		let signatures: Vec<Option<_>> = (0..10)
+			.into_iter()
+			.map(|x| if x < 3 { None } else { Some(vec![1, 2, 3, 4]) })
+			.collect();
+
+		let signed = SignedCommitment { commitment, signatures };
+
+		// when
+		let encoded = codec::Encode::encode(&signed);
+		let decoded = TestSignedCommitment::decode(&mut &*encoded);
+
+		// then
+		assert_eq!(decoded, Ok(signed));
+	}
+
+	#[test]
 	fn signed_commitment_count_signatures() {
 		// given
 		let commitment: TestCommitment = Commitment {
